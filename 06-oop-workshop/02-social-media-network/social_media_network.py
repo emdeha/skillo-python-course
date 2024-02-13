@@ -1,4 +1,5 @@
 from user import User
+from exceptions import InvalidArgument
 
 
 class SocialMediaNetwork:
@@ -7,14 +8,24 @@ class SocialMediaNetwork:
         self.messages = []  # {sender, receiver, message}
 
     def show_friends_for_user(self, user):
+        if not isinstance(user, User):
+            raise InvalidArgument("user must be User")
+
         friends = []
         for u in self.users:
-            for friend in user.friends:
+            for friend in user.friend_ids:
                 if u.id == friend:
                     friends.append(u)
         return friends
 
     def send_message(self, sender_id, receiver_id, message):
+        if not isinstance(sender_id, int):
+            raise InvalidArgument("sender_id must be int")
+        if not isinstance(receiver_id, int):
+            raise InvalidArgument("receiver_id must be int")
+        if not isinstance(message, str):
+            raise InvalidArgument("message must be str")
+
         self.messages.append({
             "sender_id": sender_id,
             "receiver_id": receiver_id,
@@ -22,6 +33,9 @@ class SocialMediaNetwork:
         })
 
     def read_messages_for_user(self, user_id):
+        if not isinstance(user_id, int):
+            raise InvalidArgument("user_id must be int")
+
         messages_for_user = []
         for message in self.messages:
             if message.receiver_id == user_id and \
