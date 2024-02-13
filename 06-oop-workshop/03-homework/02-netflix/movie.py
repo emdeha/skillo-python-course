@@ -1,8 +1,9 @@
 import uuid
+from typing import List
 
 
 class Movie:
-    def __init__(self, title, genre, actors, source_file_name):
+    def __init__(self, title: str, genre: str, actors: List[str], source_file_name: str):
         self.title = title
         self.genre = genre
         self.actors = actors

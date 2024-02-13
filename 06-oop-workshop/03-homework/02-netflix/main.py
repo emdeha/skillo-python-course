@@ -21,7 +21,7 @@ netflix.add_movie(movie_three)
 
 netflix.add_user(user)
 
-user.add_favorite_movie(movie_three)
+user.add_favorite_movie(movie_three.id)
 
 recommended_movies = netflix.recommend_movies_to_user(user)
 
