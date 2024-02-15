@@ -1,0 +1,31 @@
+{
+  "catalog": [
+    {
+      "id": "bk101",
+      "author": "Gambardella, Matthew",
+      "title": "XML Developer's Guide",
+      "genre": "Computer",
+      "price": 44.95,
+      "publish_date": "2000-10-01",
+      "description": "An in-depth look at creating applications with XML."
+    },
+    {
+      "id": "bk102",
+      "author": "Gambardella, Matthew",
+      "title": "Another Book",
+      "genre": "Computer",
+      "price": 44.95,
+      "publish_date": "2000-10-01",
+      "description": "An in-depth look at creating applications with XML."
+    },
+    {
+      "id": "bk103",
+      "author": "Gambardella, Matthew",
+      "title": "Third Book",
+      "genre": "Computer",
+      "price": 44.95,
+      "publish_date": "2000-10-01",
+      "description": "An in-depth look at creating applications with XML."
+    }
+  ]
+}
