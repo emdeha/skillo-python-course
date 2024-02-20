@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <name>Coke</name>
+        <price>1.2</price>
+    </product>
+    <product>
+        <name>Bread</name>
+        <price>2</price>
+    </product>
+    <product>
+        <name>Snickers</name>
+        <price>1</price>
+    </product>
+</products>
