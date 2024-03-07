@@ -1,0 +1,12 @@
+{% include "header.html" %}
+<form action="{% url 'add' %}" method="post">{% csrf_token %}
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div>
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year">
+    </div>
+    <input type="submit" value="Create Movie">
+</form>

@@ -1,0 +1,11 @@
+{% include "header.html" %}
+{% if movies %}
+    <h2>Our movies</h2>
+    <ul>
+    {% for movie in movies %}
+        <li>{{ movie.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No movies are available.</p>
+{% endif %}
